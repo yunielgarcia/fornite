@@ -1,17 +1,370 @@
+.nav-container {
+    height: 100px;
+    position: fixed;
+    z-index: 2000;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .card{
     border: 2px solid;
-    max-width: 180px;
+    max-width: 280px;
     position: relative;
     margin: auto;
 }
 .card-footer{
     background-color: #F4002C;
     color: white;
+    font-size: 2em;
+    padding: 5px 8px;
 }
 .card span{
     position: absolute;
-    right: 0;
-    font-size: 25px;
-    background: white;
+}
+.check_item{
+    right: 20px;
+    top: 95px;
+    font-size: 35px;
     padding: 5px;
+}
+.little_img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    width: 30%;
+}
+.v_item{
+    color: white;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    width: 30%;
+    font-size: 12px;
+    background-color: gray;
+}
+.
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+#second_banner_row{
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+#second_banner_row p{
+    text-align: justify;
+}
+#redeem_btn{
+    background-color: #e12826;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: none;
+    margin: 20px 0;
+}
+#redeem_modal-title{
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    width: 230px;
+    padding: 0 10px;
+    text-align: center;
+}
+
+/*tabs*/
+.f-tab{
+    padding: 20px 40px;
+    margin: 20px 30px;
+    position: relative;
+}
+.f-tab-img{
+    position: absolute;
+    top: -19px;
+    left: 10px;
+}
+.f-tab-txt{
+    margin-left: 45px;
+    font-size: 28px;
+}
+.f-tab-txt a{
+    color: white;
+    font-weight: bold;
+}
+.f-tab-cont{
+    height: 100px;
+    padding: 43px;
+    margin-bottom: 25px;
+}
+
+.nav-container {
+    height: 100px;
+    position: fixed;
+    z-index: 2000;
+    right: 0;
+    left: 0;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav-container .full-nav,
+.nav-container .mobile-nav {
+    position: relative;
+}
+.nav-container .full-nav ul,
+.nav-container .mobile-nav ul {
+    padding-left: 0;
+    color: #fff;
+}
+.nav-container .full-nav ul li,
+.nav-container .mobile-nav ul li {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+}
+.nav-container .full-nav ul li a,
+.nav-container .mobile-nav ul li a {
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    position: relative;
+}
+@media (min-width: 993px) and (max-width: 1199px) {
+    .nav-container .full-nav ul li a,
+    .nav-container .mobile-nav ul li a {
+        font-size: 13px;
+    }
+}
+.nav-container .full-nav ul .med,
+.nav-container .mobile-nav ul .med {
+    height: 60px;
+}
+.nav-container .full-nav ul .med a,
+.nav-container .mobile-nav ul .med a {
+    height: 90px;
+    padding-top: 30px;
+}
+.nav-container .full-nav ul .med-left:after,
+.nav-container .mobile-nav ul .med-left:after,
+.nav-container .full-nav ul .dark-left:after,
+.nav-container .mobile-nav ul .dark-left:after,
+.nav-container .full-nav ul .med-right:after,
+.nav-container .mobile-nav ul .med-right:after,
+.nav-container .full-nav ul .dark-right:after,
+.nav-container .mobile-nav ul .dark-right:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -50%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: inherit;
+}
+.nav-container .full-nav ul .med-left:after,
+.nav-container .mobile-nav ul .med-left:after,
+.nav-container .full-nav ul .dark-left:after,
+.nav-container .mobile-nav ul .dark-left:after {
+    transform: skewY(3deg);
+    transform-origin: bottom right;
+}
+.nav-container .full-nav ul .med-right:after,
+.nav-container .mobile-nav ul .med-right:after,
+.nav-container .full-nav ul .dark-right:after,
+.nav-container .mobile-nav ul .dark-right:after {
+    transform: skewY(-3deg);
+    transform-origin: bottom left;
+}
+.nav-container .full-nav ul .med-left,
+.nav-container .mobile-nav ul .med-left {
+    background: #414042;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, #333, #414042 15%);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #333, #414042 15%);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #333, #414042 15%);
+    /* For Firefox 3.6 to 15 */
+    background: -ms-linear-gradient(right, #333, #414042 15%);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(right, #333, #414042 15%);
+    /* Standard syntax */
+}
+.nav-container .full-nav ul .med-right,
+.nav-container .mobile-nav ul .med-right {
+    background: #414042;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #333, #414042 15%);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #333, #414042 15%);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #333, #414042 15%);
+    /* For Firefox 3.6 to 15 */
+    background: -ms-linear-gradient(left, #333, #414042 15%);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left, #333, #414042 15%);
+    /* Standard syntax */
+}
+.nav-container .full-nav ul .dark-left,
+.nav-container .mobile-nav ul .dark-left {
+    bbackground: #414042;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(right, #333, #414042 15%);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #333, #414042 15%);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #333, #414042 15%);
+    /* For Firefox 3.6 to 15 */
+    background: -ms-linear-gradient(right, #333, #414042 15%);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(right, #333, #414042 15%);
+    /* Standard syntax */
+}
+.nav-container .full-nav ul .dark-right,
+.nav-container .mobile-nav ul .dark-right {
+    bbackground: #414042;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #333, #414042 15%);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #333, #414042 15%);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #333, #414042 15%);
+    /* For Firefox 3.6 to 15 */
+    background: -ms-linear-gradient(left, #333, #414042 15%);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(left, #333, #414042 15%);
+    /* Standard syntax */
+}
+@media (min-width: 1200px) {
+    .nav-container .full-nav {
+        width: 1200px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-container .full-nav {
+        width: 1000px;
+    }
+}
+@media (max-width: 991px) {
+    .nav-container .full-nav {
+        display: none;
+    }
+}
+.logo img{
+    width: 65%;
+}
+.nav-container .full-nav ul .logo {
+    width: 42%;
+    height: 115px;
+    padding-top: 10px;
+    background-color: #e12826;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+}
+.nav-container .full-nav ul .logo a {
+    height: 105px;
+    padding-top: 10px;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-container .full-nav ul .logo a {
+        padding-top: 20px;
+    }
+}
+.nav-container .full-nav ul .med {
+    width: 16%;
+}
+.nav-container .full-nav ul .dark {
+    height: 44px;
+    width: 13%;
+}
+.nav-container .full-nav ul .dark a {
+    height: 65px;
+    padding-top: 25px;
+}
+@media (min-width: 1200px) {
+    .nav-container .full-nav ul .dark-right {
+        padding-left: 55px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .nav-container .full-nav ul .dark-right {
+        padding-left: 45px;
+    }
+}
+.nav-container .mobile-nav {
+    padding: 0;
+}
+@media (min-width: 992px) {
+    .nav-container .mobile-nav {
+        display: none;
+    }
+}
+@media (min-width: 767px) and (max-width: 991px) {
+    .nav-container .mobile-nav {
+        width: 750px;
+    }
+}
+@media (max-width: 766px) {
+    .nav-container .mobile-nav {
+        width: 100%;
+    }
+}
+.nav-container .mobile-nav ul .logo {
+    width: 50%;
+    padding: 10px;
+    height: 105px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+    background-color: #e12826;
+}
+@media (min-width: 767px) and (max-width: 991px) {
+    .nav-container .mobile-nav ul .logo {
+        height: 95px;
+    }
+}
+@media (max-width: 766px) {
+    .nav-container .mobile-nav ul .logo {
+        height: 90px;
+    }
+}
+.nav-container .mobile-nav ul .logo a {
+    height: 105px;
+    padding-top: 10px;
+}
+@media (min-width: 601px) and (max-width: 991px) {
+    .nav-container .mobile-nav ul .logo a {
+        padding-top: 10px;
+    }
+}
+@media (max-width: 600px) {
+    .nav-container .mobile-nav ul .logo a {
+        padding-top: 20px;
+    }
+}
+.nav-container .mobile-nav ul .med {
+    height: 50px;
+    width: 25%;
+}
+.nav-container .mobile-nav ul .med a {
+    padding-top: 20px;
+}
+@media (min-width: 767px) and (max-width: 991px) {
+    .nav-container .mobile-nav ul .med-right {
+        padding-left: 75px;
+    }
+}
+
+/* overwriting modal bootstrap*/
+.modal-dialog{
+    margin: 160px auto;
+}
+.modal-content{
+    padding: 15px;
 }

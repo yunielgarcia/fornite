@@ -8,58 +8,209 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-    <div ng-controller="appCtrl as vm" class="container">
-
-        <div class="row">
-            <div class="col-md-3">
-                <!--<button type="button" class="btn btn-default" ng-click="vm.open('lg')">Large modal</button>-->
-                filter
+<body ng-controller="appCtrl as vm">
+<!--navbar-->
+<div class="nav-container">
+    <div class="container full-nav">
+        <ul>
+            <li class="dark dark-left">
+                <a href="#">toys</a>
+            </li><li class="med med-left">
+            <a href="#">collector's guide</a>
+        </li><li class="logo">
+            <a href="#">
+                <img src="assets/media/images/Fortnite.png" alt="">
+            </a>
+        </li><li class="med med-right">
+            <a class="modal-button wtb-Modal" data-toggle="modal" data-target="#wtb-Modal">where to buy</a>
+        </li><li class="dark dark-right">
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-            <div class="col-md-9">
-                <div class="row">
-                    <div ng-repeat="item in vm.items" class="col-xs-12 col-sm-6 col-md-4"
-                         style="padding: 10px;height: 190px">
-                        <div class="card">
-                            <div>
-                                <img ng-src="{{item.src}}"
-                                     ng-click="vm.open(item)" alt="" width="100%">
-                                <span class="glyphicon glyphicon-ok" aria-hidden="true"
-                                      ng-style="{color: (item.selected ? 'green': '')}"
-                                      ng-click="item.selected = !item.selected">
-                                </span>
-                            </div>
-                            <div class="card-footer">
-                                {{item.name}}
-                            </div>
+        </li>
+        </ul>
+    </div>
+    <div class="container mobile-nav">
+        <ul>
+            <li class="med med-left">
+                <a href="#">toys</a>
+            </li><li class="logo">
+            <a href="#">
+                <img src="assets/media/images/Fortnite.png" alt="">
+            </a>
+        </li><li class="med med-right"> 
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </li>
+        </ul>
+    </div>
+</div>
+<section>
+    <!--first banner-->
+    <div>
+        <img src="assets/media/images/fornite_main.jpg" alt="Fornite" width="100%">
+    </div>
+    <!--second banner-->
+    <div id="second_banner_row" class="row row-margin-cero">
+        <div class="col-md-6 text-center">
+            <div class="text-left">
+                <h3 style="text-transform: uppercase">heading one</h3>
+                <p>
+                    Each Roblox toy comes with a code that can be redeemed for
+                    a virtual item on roblox.com/toys/redeem. A few lucky winners
+                    will receive an additional Chaser code, unlocking a bonus (and very rare)
+                    virtual item!
+                </p>
+                <h3 style="text-transform: uppercase">heading two</h3>
+                <p>
+                    Each Roblox toy comes with a code that can be redeemed for
+                    a virtual item on roblox.com/toys/redeem. A few lucky winners
+                    will receive an additional Chaser code, unlocking a bonus (and very rare)
+                    virtual item!
+                </p>
+                <button id="redeem_btn" type="button" ng-click="vm.openRedeem()">REDEEM MY CODE</button>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="assets/media/images/chest.jpg" alt="Fornite" width="100%">
+        </div>
+    </div>
+
+</section>
+<!--items-->
+<div class="container">
+    <div class="row">
+        <!--<div class="col-md-3">-->
+            <!--&lt;!&ndash;<button type="button" class="btn btn-default" ng-click="vm.open('lg')">Large modal</button>&ndash;&gt;-->
+            <!--filter-->
+        <!--</div>-->
+        <div class="col-md-12">
+            <div class="row">
+
+
+
+
+
+                <div class="f-tab-cont text-center">
+                    <span class="f-tab" style="background-color: #FFA765;">
+                        <span class="f-tab-txt">
+                            <a href="#">REDEEM CODE</a>
+                        </span>
+                    </span>
+                    <span class="f-tab" style="background-color: #FF633E;">
+                        <span class="f-tab-img">
+                            <img src="assets/media/images/Fortnite-Shield.png" alt="fornite core button" width="70px">
+                        </span>
+                        <span class="f-tab-txt">
+                            <a href="#">Core</a>
+                        </span>
+                    </span>
+                    <span class="f-tab" style="background-color: #FFCC50;">
+                        <span class="f-tab-img">
+                            <img src="assets/media/images/FallingBoxes.png" alt="fornite core button" width="70px">
+                        </span>
+                        <span class="f-tab-txt">
+                            <a href="#">LEVEL 100</a>
+                        </span>
+                    </span>
+                </div>
+
+
+
+
+                <div ng-repeat="item in vm.items" class="col-xs-12 col-sm-6 col-md-4"
+                     style="padding: 10px;height: 280px">
+                    <div class="card">
+                        <div style="width: 70%">
+                            <img ng-src="{{item.src}}"
+                                 ng-click="vm.open(item)" alt="" width="100%"
+                                style="border-right: 2px solid;">
+                            <span class="little_img">
+                                <img src="{{ item.src }}" alt="" style="width: 100%">
+                            </span>
+                            <span class="v_item">
+                                <p>
+                                    virtual item
+                                </p>
+                            </span>
+                            <span class="glyphicon glyphicon-ok check_item" aria-hidden="true"
+                                  ng-style="{color: (item.selected ? 'green': '')}"
+                                  ng-click="item.selected = !item.selected">
+                            </span>
+
+                        </div>
+
+
+                        <div class="card-footer">
+                            {{item.name}}
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
 
+        </div>
     </div>
+</div>
+<footer>
 
-    <!--External-->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
-    <script src="assets/js/todo.js"></script>
-    <script src="lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
+</footer>
 
-    <!--modal-->
-    <script type="text/ng-template" id="myModalContent.html">
-        <div class="modal-header">
-            <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
-        </div>
-        <div class="modal-body" id="modal-body">
-            <div ng-if="vm.fig">
-                <img ng-src="{{vm.fig.src}}" alt="" width="200px">
+<!--External-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+<script src="assets/js/todo.js"></script>
+<script src="lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
+
+
+<!--modals-->
+<script type="text/ng-template" id="myModalContent.html">
+    <div ng-if="vm.fig" class="modal-header">
+        <h2 class="modal-title" id="modal-title">COLLECTOR'S GUIDE ITEM</h2>
+    </div>
+    <div class="modal-body" id="modal-body">
+        <div ng-if="vm.fig" class="row">
+            <div class="col-md-6">
+                <img ng-src="{{vm.fig.src}}" alt="" width="100%">
+            </div>
+            <div class="col-md-6">
+                <h3>{{ vm.fig.name }}</h3>
+                <p>{{ vm.fig.description }} </p>
             </div>
         </div>
-        <div class="modal-footer">
-            <button class="btn btn-primary" type="button" ng-click="vm.ok()">OK</button>
-            <button class="btn btn-warning" type="button" ng-click="vm.cancel()">Cancel</button>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="vm.ok()">OK</button>
+        <button class="btn btn-warning" type="button" ng-click="vm.cancel()">Cancel</button>
+    </div>
+</script>
+<script type="text/ng-template" id="redeemModal.html">
+    <div class="modal-header">
+        <h4 class="modal-title" id="redeem_modal-title">IMPORTANT MESSAGE</h4>
+    </div>
+    <div class="modal-body" id="redeem_modal-body">
+        <div class="row">
+            <div class="col-md-12">
+                <h4><strong>YOU ARE NOW LEAVING FORTNITE.JAZWARES.COM</strong></h4>
+                <p>By clicking “continue” you’ll be leaving our website and landing on
+                    another site hosted by Epic. Remember, they have different terms
+                    and privacy policies. Hope we see you soon! YOUNG Fortnite
+                    Gamers, get your parent’s permission before visiting other sites.
+                </p>
+            </div>
         </div>
-    </script>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" type="button" ng-click="vm.ok()">CONTINUE</button>
+        <button class="btn btn-warning" type="button" ng-click="vm.cancel()">CANCEL</button>
+    </div>
+</script>
+
+
 </body>
 </html>
