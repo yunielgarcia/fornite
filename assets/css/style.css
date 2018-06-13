@@ -1,0 +1,17 @@
+.card{
+    border: 2px solid;
+    max-width: 180px;
+    position: relative;
+    margin: auto;
+}
+.card-footer{
+    background-color: #F4002C;
+    color: white;
+}
+.card span{
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    background: white;
+    padding: 5px;
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div ng-controller="appCtrl as vm" class="container">
+
+        <div class="row">
+            <div class="col-md-3">
+                <button type="button" class="btn btn-default" ng-click="vm.open('lg')">Large modal</button>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div ng-repeat="item in vm.items" class="col-xs-12 col-sm-6 col-md-4"
+                         style="padding: 10px;height: 190px">
+                        <div class="card">
+                            <div>
+                                <img ng-src="{{item.src}}" alt="" width="100%">
+                                <span class="glyphicon glyphicon-ok" aria-hidden="true"
+                                      ng-style="{color: (item.selected ? 'green': '')}"
+                                      ng-click="item.selected = !item.selected">
+                                </span>
+                            </div>
+                            <div class="card-footer">
+                                {{item.name}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--External-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.10/angular.min.js"></script>
+    <script src="assets/js/todo.js"></script>
+    <script src="lib/ui-bootstrap-tpls-2.5.0.min.js"></script>
+
+    <!--modal-->
+    <script type="text/ng-template" id="myModalContent.html">
+        <div class="modal-header">
+            <h3 class="modal-title" id="modal-title">I'm a modal!</h3>
+        </div>
+        <div class="modal-body" id="modal-body">
+            <ul>
+                <li>
+                    <!--<a href="#" ng-click="$event.preventDefault()>item here</a>-->
+                </li>
+            </ul>
+            Selected: <b>{{ vm.selected.item }}</b>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" type="button" ng-click="vm.ok()">OK</button>
+            <button class="btn btn-warning" type="button" ng-click="vm.cancel()">Cancel</button>
+        </div>
+    </script>
+</body>
+</html>
