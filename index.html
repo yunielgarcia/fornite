@@ -19,7 +19,7 @@
             <a href="#">collector's guide</a>
         </li><li class="logo">
             <a href="#">
-                <img src="assets/media/images/Fortnite.png" alt="">
+                <img src="assets/media/images/fornite-logo.png" alt="">
             </a>
         </li><li class="med med-right">
             <a class="modal-button wtb-Modal" data-toggle="modal" data-target="#wtb-Modal">where to buy</a>
@@ -39,7 +39,7 @@
                 <a href="#">toys</a>
             </li><li class="logo">
             <a href="#">
-                <img src="assets/media/images/Fortnite.png" alt="">
+                <img src="assets/media/images/fornite-logo.png" alt="">
             </a>
         </li><li class="med med-right"> 
             <div class="menu-icon">
@@ -54,52 +54,51 @@
 </div>
 <section>
     <!--first banner-->
-    <div>
-        <img src="assets/media/images/fornite_main.jpg" alt="Fornite" width="100%">
+    <div id="fornite_banner" style="background-image: url('assets/media/images/fornite_main.jpg');">
+        <!--<img src="assets/media/images/fornite_main.jpg" alt="Fornite" width="100%">-->
     </div>
     <!--second banner-->
     <div id="second_banner_row" class="row row-margin-cero">
         <div class="col-md-6 text-center">
             <div class="text-left">
-                <h3 style="text-transform: uppercase">heading one</h3>
+                <h3 style="text-transform: uppercase">COOL IN GAME REVEALS!</h3>
                 <p>
-                    Each Roblox toy comes with a code that can be redeemed for
-                    a virtual item on roblox.com/toys/redeem. A few lucky winners
-                    will receive an additional Chaser code, unlocking a bonus (and very rare)
-                    virtual item!
+                    Each Fornite collectible comes with a code that can be redeemed
+                    for a virtual item on fortnite.com/toys/redeem. A few lucky winners
+                    will receive an additional Chased code, unlocking a bonus (and
+                    very rare) virtual item!
                 </p>
-                <h3 style="text-transform: uppercase">heading two</h3>
+                <h3 style="text-transform: uppercase">Buy! Scan! Reveal!</h3>
                 <p>
-                    Each Roblox toy comes with a code that can be redeemed for
-                    a virtual item on roblox.com/toys/redeem. A few lucky winners
-                    will receive an additional Chaser code, unlocking a bonus (and very rare)
-                    virtual item!
+                    Use the collector’s checklist to keep track of your Fortnite
+                    collection!
                 </p>
                 <button id="redeem_btn" type="button" ng-click="vm.openRedeem()">REDEEM MY CODE</button>
             </div>
         </div>
         <div class="col-md-6">
-            <img src="assets/media/images/chest.jpg" alt="Fornite" width="100%">
+            <img src="assets/media/images/fornite-box.png" alt="Fornite" width="100%">
         </div>
     </div>
 
 </section>
 <!--items-->
 <div class="container">
-    <div class="row">
+    <div class="row row-margin-cero">
         <!--<div class="col-md-3">-->
             <!--&lt;!&ndash;<button type="button" class="btn btn-default" ng-click="vm.open('lg')">Large modal</button>&ndash;&gt;-->
             <!--filter-->
         <!--</div>-->
         <div class="col-md-12">
-            <div class="row">
+            <div class="row row-margin">
 
 
 
 
 
                 <div class="f-tab-cont text-center">
-                    <span class="f-tab" style="background-color: #FFA765;">
+                    <span class="f-tab"
+                          style="background-color: #FFA765;margin-left: 0;padding-left: 0">
                         <span class="f-tab-txt">
                             <a href="#">REDEEM CODE</a>
                         </span>
@@ -158,8 +157,17 @@
         </div>
     </div>
 </div>
-<footer>
-
+<footer id="footer">
+    <div class="row">
+        <div class="col-sm-3">
+            <img src="assets/media/images/fornite-logo.png" alt="" style="max-width: 200px">
+        </div>
+        <div class="col-sm-6"></div>
+        <div class="col-sm-3">
+            <img src="assets/media/images/Jazwares_w.png" alt="" style="max-width: 200px">
+            <p>©2018 Jazwares, LLC All rights reserved.</p>
+        </div>
+    </div>
 </footer>
 
 <!--External-->
@@ -186,7 +194,7 @@
     </div>
     <div class="modal-footer">
         <button class="btn btn-primary" type="button" ng-click="vm.ok()">OK</button>
-        <button class="btn btn-warning" type="button" ng-click="vm.cancel()">Cancel</button>
+        <!--<button class="btn btn-warning" type="button" ng-click="vm.cancel()">Cancel</button>-->
     </div>
 </script>
 <script type="text/ng-template" id="redeemModal.html">

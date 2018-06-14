@@ -1,14 +1,7 @@
-.nav-container {
-    height: 100px;
-    position: fixed;
-    z-index: 2000;
-    right: 0;
-    left: 0;
-    top: 0;
-    margin-left: auto;
-    margin-right: auto;
+.row-margin-cero{
+    margin-right: 0;
+    margin-left: 0;
 }
-
 .card{
     border: 2px solid;
     max-width: 280px;
@@ -16,7 +9,7 @@
     margin: auto;
 }
 .card-footer{
-    background-color: #F4002C;
+    background-color: #341C52;
     color: white;
     font-size: 2em;
     padding: 5px 8px;
@@ -60,7 +53,7 @@
     text-align: justify;
 }
 #redeem_btn{
-    background-color: #e12826;
+    background-color: #341C52;
     font-weight: bold;
     padding: 8px 15px;
     border: none;
@@ -74,10 +67,17 @@
     padding: 0 10px;
     text-align: center;
 }
+#fornite_banner{
+    height: 650px;
+    /* padding-top: 240px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 /*tabs*/
 .f-tab{
-    padding: 20px 40px;
+    padding: 20px 40px 13px;
     margin: 20px 30px;
     position: relative;
 }
@@ -96,7 +96,7 @@
 }
 .f-tab-cont{
     height: 100px;
-    padding: 43px;
+    padding: 43px 0px;
     margin-bottom: 25px;
 }
 
@@ -184,62 +184,62 @@
 }
 .nav-container .full-nav ul .med-left,
 .nav-container .mobile-nav ul .med-left {
-    background: #414042;
+    background: #361D4F;
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(right, #333, #414042 15%);
+    background: -webkit-linear-gradient(right, #8CBAD8, #361D4F 10%);
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #333, #414042 15%);
+    background: -o-linear-gradient(right, #8CBAD8, #361D4F 10%);
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #333, #414042 15%);
+    background: -moz-linear-gradient(right, #8CBAD8, #361D4F 10%);
     /* For Firefox 3.6 to 15 */
-    background: -ms-linear-gradient(right, #333, #414042 15%);
+    background: -ms-linear-gradient(right, #8CBAD8, #361D4F 10%);
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(right, #333, #414042 15%);
+    background: linear-gradient(right, #8CBAD8, #361D4F 10%);
     /* Standard syntax */
 }
 .nav-container .full-nav ul .med-right,
 .nav-container .mobile-nav ul .med-right {
-    background: #414042;
+    background: #361D4F;
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #333, #414042 15%);
+    background: -webkit-linear-gradient(left, #8CBAD8, #361D4F 10%);
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left, #333, #414042 15%);
+    background: -o-linear-gradient(left, #8CBAD8, #361D4F 10%);
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, #333, #414042 15%);
+    background: -moz-linear-gradient(left, #8CBAD8, #361D4F 10%);
     /* For Firefox 3.6 to 15 */
-    background: -ms-linear-gradient(left, #333, #414042 15%);
+    background: -ms-linear-gradient(left, #8CBAD8, #361D4F 10%);
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(left, #333, #414042 15%);
+    background: linear-gradient(left, #8CBAD8, #361D4F 10%);
     /* Standard syntax */
 }
 .nav-container .full-nav ul .dark-left,
 .nav-container .mobile-nav ul .dark-left {
-    bbackground: #414042;
+    bbackground: #361D4F;
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(right, #333, #414042 15%);
+    background: -webkit-linear-gradient(right, #8CBAD8, #361D4F 10%);
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(right, #333, #414042 15%);
+    background: -o-linear-gradient(right, #8CBAD8, #361D4F 10%);
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(right, #333, #414042 15%);
+    background: -moz-linear-gradient(right, #8CBAD8, #361D4F 10%);
     /* For Firefox 3.6 to 15 */
-    background: -ms-linear-gradient(right, #333, #414042 15%);
+    background: -ms-linear-gradient(right, #8CBAD8, #361D4F 10%);
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(right, #333, #414042 15%);
+    background: linear-gradient(right, #8CBAD8, #361D4F 10%);
     /* Standard syntax */
 }
 .nav-container .full-nav ul .dark-right,
 .nav-container .mobile-nav ul .dark-right {
-    bbackground: #414042;
+    bbackground: #361D4F;
     /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left, #333, #414042 15%);
+    background: -webkit-linear-gradient(left, #8CBAD8, #361D4F 10%);
     /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(left, #333, #414042 15%);
+    background: -o-linear-gradient(left, #8CBAD8, #361D4F 10%);
     /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(left, #333, #414042 15%);
+    background: -moz-linear-gradient(left, #8CBAD8, #361D4F 10%);
     /* For Firefox 3.6 to 15 */
-    background: -ms-linear-gradient(left, #333, #414042 15%);
+    background: -ms-linear-gradient(left, #8CBAD8, #361D4F 10%);
     /* For Firefox 3.6 to 15 */
-    background: linear-gradient(left, #333, #414042 15%);
+    background: linear-gradient(left, #8CBAD8, #361D4F 10%);
     /* Standard syntax */
 }
 @media (min-width: 1200px) {
@@ -264,7 +264,7 @@
     width: 42%;
     height: 115px;
     padding-top: 10px;
-    background-color: #e12826;
+    background-color: #341C52;
     padding-left: 30px;
     padding-right: 30px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
@@ -367,4 +367,12 @@
 }
 .modal-content{
     padding: 15px;
+}
+
+/*footer*/
+#footer{
+    min-height: 300px;
+    background-color: black;
+    color: white;
+    padding: 4% 6%;
 }
